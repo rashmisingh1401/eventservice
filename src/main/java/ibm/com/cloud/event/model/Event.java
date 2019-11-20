@@ -5,6 +5,15 @@ public class Event {
 	/*
 	 * private Long id; private Long organizationId; private Long departmentId;
 	 */
+	private Long id;
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	private String name;
 	private String birthday;
 	private String email;

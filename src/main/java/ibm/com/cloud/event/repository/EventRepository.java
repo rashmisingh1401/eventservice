@@ -11,8 +11,9 @@ public class EventRepository {
 	private List<Event> events = new ArrayList<>();
 	
 	public Event add(Event event) {
-		event.setName("Rashmi");
+		event.setId((long) (events.size()+1));
 		events.add(event);
+		
 		return event;
 	}
 	
