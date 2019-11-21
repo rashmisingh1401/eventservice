@@ -36,9 +36,9 @@ public class EventApplication {
 	@Bean
 	EventRepository repository() {
 		EventRepository repository = new EventRepository();
-		repository.add(new Event("John Smith", "14011999", "johnsmit@gmail.com"));
-		repository.add(new Event("Darren Hamilton", "14011999", "johnsmit@gmail.com"));
-		repository.add(new Event("Tom Scott", "14011999", "johnsmit@gmail.com"));
+		repository.add(new Event("John Smith", "14011999", "johnsmit@gmail.com", "October"));
+		repository.add(new Event("Darren Hamilton", "14011999", "johnsmit@gmail.com", "October"));
+		repository.add(new Event("Tom Scott", "14011999", "johnsmit@gmail.com", "March"));
 		/*
 		 * repository.add(new Event(1L, 2L, "Anna London", 39, "Analyst"));
 		 * repository.add(new Event(1L, 2L, "Patrick Dempsey", 27, "Developer"));
