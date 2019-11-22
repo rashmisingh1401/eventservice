@@ -39,6 +39,11 @@ public class EventController {
 		LOGGER.info("Event find");
 		return repository.findAll();
 	}
+	@GetMapping("/{month}")
+	public List<Event> findByMonth(@PathVariable("month") String month) {
+		LOGGER.info("Event find: month={}", month);
+		return repository.findByMonth(month);
+	}
 	/*
 	 * @GetMapping("/department/{departmentId}") public List<Event>
 	 * findByDepartment(@PathVariable("departmentId") Long departmentId) {
